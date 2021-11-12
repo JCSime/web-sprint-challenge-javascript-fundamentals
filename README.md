@@ -25,14 +25,27 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
+    .map() is used when you want to go through your data one by one and do something to the data, then sticks it into a new array.
+    .reduce() instead of modifying or creating an array it returns a single value. Typically used for mathematical calculations.
+    .filter() is similar to .map() in the sense that they both go through data one by one and sticks it into a new array, but what makes .filter() special is that you must set a condition to filter that equates to either true or false. 
 
 2. Explain the difference between a callback and a higher order function.
+    Callbacks are functions that are given as an argument to other functions. Higher order functions are functions that receive other functions as an argument.
 
 3. Explain what a closure is.
+    Closure is when an inner function grabs something from an outer function.
 
 4. Describe the four principles of the 'this' keyword.
+    (1). Window binding is when you don't give 'this' any context or barriers and it brings back the global object. Window binding is considered a bad thing and don't usually want to do it on purpose.
+    (2). Implicit binding affects objects with methods. When the method is used, look to the left of the dot, that is what 'this' is referring to.
+    (3). Explicit binding is when in conjunction with the 'this' keyword we use .call, .apply or .bind to tell the function what 'this' is.
+        (3a) .call invokes immediately and takes arguments one by one
+        (3b) .apply also invokes immediately and you pass in the arguments in the form of an array.
+        (3c) .bind allows you to pass in arguments one by one but doesn't invoke immediately. allowing you to invoke whenever you want 
+    (4). New binding when used binds the 'this' keyword to the new object being created. Same goes for constructor functions using the new keyword.
 
 5. Why do we need super() in an extended class?
+    Because super() gives the extended class the attributes of the parent class.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
